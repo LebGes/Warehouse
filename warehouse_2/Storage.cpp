@@ -36,7 +36,7 @@ std::vector<Cell> Storage::getCells()
 	{
 		if (allCells[i].getStorageId() == this->id)
 		{
-			cells->insert(allCells.at(i));
+			cells.push_back(allCells.at(i));
 		}
 	}
 	return cells;
